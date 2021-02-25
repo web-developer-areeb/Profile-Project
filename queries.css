@@ -1,0 +1,419 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+:root {
+    --white-1: #e5e5e5;
+    --white-2: #f8f8f8;
+
+    --grey-1: #bdbdbd;
+    --grey-2: #4f4f4f;
+
+    --primary-light: #3667a6;
+    --primary-dark: #2a3d66;
+
+
+    --font-extra-large: 4.8rem;
+    --font-large: 3.6rem;
+    --font-medium: 3.2rem;
+    --font-small: 2.4rem;
+    --font-very-small: 1.6rem;
+    --font-extra-small: 1.4rem;
+
+}
+
+@media only screen and (max-width: 375px) {
+    
+    * {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        width: 343px;
+    }
+
+    h2 { font-size: 24px;}
+
+    h3 { font-size: var(--font-very-small)}
+    
+    h4 { font-size: 24px;   }
+
+    h5 { font-size: 16px;}
+
+    .hero-box {
+        /* height: 712.7px; */
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .text-box {
+        background-color: var(--white-2);
+        width: 343px;
+        height: 246px;
+        padding: 48px 16px 80px 16px;
+    }
+
+    .text-box__main {
+        margin-bottom: 12px;
+    }
+
+    .btns {
+        width: 34.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        width: 343px;
+    }
+
+    .btns .btn__ghost { 
+        margin-top: 22.5px;
+        margin-bottom: 12px;
+    }
+
+    .hero-image {
+        width: 375px;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 375px;
+        height: auto;
+    }
+
+    .about-me {
+        width: 375px;
+        /* height: 459px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-me__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding: 64px 16px 24px 16px;
+    }
+
+    .about-me__description {
+        font-size: 1.2rem;
+        padding: 0px 16px 64px 16px;
+        line-height: 2;
+    }
+
+    .about-me__description-text {
+        margin-bottom: 12px;
+    }
+
+    .about-me__description-btn {
+        align-self: center;
+        margin-top: 0;
+    }
+
+    /*---------------------------------------*/
+    /* WORK EXPERIENCE */
+    /*---------------------------------------*/
+
+    .work-experience {
+        width: 375px;
+        height: 542px;
+    }
+
+    .work-experience-box {
+        width: 343px;
+        padding: 6.4rem 1.6rem;
+        display: flex;                        
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .work-experience__heading-main {
+        width: 25rem;
+        height: 2.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .work-experience__content {
+        width: 37.5rem;
+        position: relative;
+    }
+
+    .work-experience__content h5 {
+        font-size: 2rem;
+        font-weight: 400;
+        height: 1.9rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .work-experience__content p{
+        width: 34.3rem;
+        height: 4.8rem;  
+        font-size: 1.2rem;
+        line-height: 2;
+        margin-top: 2.1rem;
+        padding: 0;
+    }
+
+    
+    .work-experience__content:not(:last-child) {
+        margin-bottom: 4.9rem;
+    }
+
+
+
+    .work-experience__content:not(:last-child)::after {
+        position: absolute;
+        top: 11.2rem;
+        left: 0;
+        width: 34.3rem;
+        content: "";
+        border: 1px solid var(--grey-1);
+    }
+
+
+    /*---------------------------------------*/
+    /* SKILLS */
+    /*---------------------------------------*/
+
+    .skills-box {
+        width: 31.8rem;
+        height: 26.8rem;
+        background: var(--primary-dark);
+        padding: 6.4rem 2.85rem;
+    }
+
+    .skills__heading{
+        width: 31.8rem;
+    }
+
+    .skills__heading h2 {
+        margin: 0 auto;
+    }
+
+    .skills__content-box {
+        margin-top: 0;
+    }
+
+    .skills__content-box li {
+        width: 31.8rem;
+        list-style: none;
+        margin-top: 2.4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .skills__content-box li:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .skills__content-box p {
+        font-size: 12px;
+        width: 10.5rem;
+        height: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .skills__bar-box {
+        width: 14.26rem;
+        height: 1.6rem;
+        margin-right: 1.4rem;
+    }
+
+    .skills__bar-box .bar {
+        width: 100%;
+        height: 1.6rem;
+        background: var(--white-2);
+        font-size: 1.4rem;
+    }
+    .skills__content-box .html {
+        background: var(--primary-light);
+        width: 90%;
+    }
+
+    .skills__content-box .bar .css {
+        background: var(--primary-light);
+        width: 70%;   
+    }
+
+    .skills__content-box .bar .javascript {
+        background: var(--primary-light);
+        width: 70%;
+    }
+
+    .skills__content-box .bar .jquery {
+        background: var(--primary-light);
+        width: 65%;
+    }
+
+    .skills__content-box .bar .typography {
+        background: var(--primary-light);
+        width: 80%;
+    }
+
+    .skills__content-box .bar .react {
+        background: var(--primary-light);
+        width: 5%;
+    }
+
+    .skills__content-box small {
+        font-size: 1.2rem;
+    } 
+
+
+    /*---------------------------------------*/
+    /* PREVIOUS PROJECTS */
+    /*---------------------------------------*/
+
+    .projects-section {
+        width: 37.5rem;
+        background-color: var(--white-2);
+    }
+
+    .projects {
+        width: 34.3rem;
+        height: 158rem;
+        padding: 6.4rem 1.6rem;
+    }
+
+    .projects__heading-main {
+        width: 34.3rem;
+        margin-bottom: 2.4rem;
+        flex-direction: row;
+    }
+
+    .grid-1__row-1 {
+        margin: 2.4rem 0 0 0;
+    }
+
+    .grid-1__row-2 {
+        margin: 0rem;
+    }
+
+    .projects__image-box {
+        width: 34.3rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .projects__image {
+        width: 34.3rem;
+        height: 24.5rem;
+    }
+
+    .projects__description p{
+        width: 34.3rem;
+        color: var(--grey-2);
+        line-height: 2;
+        font-size: 1.2rem;
+    }
+
+    /*---------------------------------------*/
+    /* INSTAGRAM */
+    /*---------------------------------------*/
+
+    .instagram {
+        height: 55.4rem;
+        width: 37.5rem;
+    }
+
+    .instagram__content {
+        padding: 6.4rem 1.6rem;
+    }
+
+    .instagram__heading-main {
+        width: 25.9rem;
+        height: 2.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .instagram__heading-sub {
+        margin-bottom: 2.4rem;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .instagram__images {
+        margin: 0;   
+    }
+    
+    .grid-insta__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .insta {
+        width: 10.9rem;
+        height: 10.9rem;
+    }
+
+    .insta:not(:last-child) {
+        margin-right: .8rem;
+    }
+
+
+    /*---------------------------------------*/
+    /* FOOTER */
+    /*---------------------------------------*/
+
+    .footer-section {
+        width: 37.5rem;
+        height: 41.2rem;
+        background-color: var(--primary-dark);
+    }
+
+    .footer__container-box {
+        padding: 6.4rem 1.6rem;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .footer__heading-main h3 {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .footer__description {
+        width: 34.3rem;
+        height: 9.6rem;
+    }
+
+    .footer__description p {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+
+    .footer__social-links ul li{
+        list-style: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer__social-links {
+        margin-left: 0rem;
+        margin-top: 3.6rem;
+        
+    }
+
+    .footer__social-links .url {
+        font-size: 1.6rem;
+    }
+
+
+}

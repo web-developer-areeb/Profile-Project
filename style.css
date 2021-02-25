@@ -1,0 +1,467 @@
+/*IMPORTING GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*---------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------*/
+
+html {
+    color: #F8F8F8;
+    font-family:'Roboto',  sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    line-height: 1.17;
+
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/*  VARIABLES   */
+:root {
+    --white-1: #e5e5e5;
+    --white-2: #f8f8f8;
+
+    --grey-1: #bdbdbd;
+    --grey-2: #4f4f4f;
+
+    --primary-light: #3667a6;
+    --primary-dark: #2a3d66;
+
+
+    --font-extra-large: 4.8rem;
+    --font-large: 3.6rem;
+    --font-medium: 3.2rem;
+    --font-small: 2.4rem;
+    --font-very-small: 1.6rem;
+    --font-extra-small: 1.4rem;
+
+}
+
+/*---------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------------*/
+
+.row {
+    max-width: 128rem;
+    margin: 0 auto;
+}
+
+.space {
+    margin-bottom: 2rem;
+}
+
+
+/*------------HEADINGS----------*/
+
+h1 {
+    font-size: 7.2rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--font-extra-large);     /* font size 48px */
+    font-weight: 400;
+}
+
+h3 {
+    font-size: var(--font-large);    /* font size 36px */
+    font-weight: 700;
+}
+
+h4 {
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+h5 {
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+
+/*----------BUTTONS------------*/
+
+.btns {    
+    width: 412px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.btn {
+    border: 1px solid var(--primary-light);
+    width: 200px;
+    height: 43px;
+    text-transform: uppercase;
+}
+
+.btn:not(:last-child) {
+    margin-right: 12px;
+}
+
+.btn a{
+    text-decoration: none;
+    font-size: var(--font-very-small);
+    color: var(--primary-light);
+    font-weight: 700;
+    margin: auto;
+}   
+
+.btn__full {
+    background: var(--primary-light);
+}
+
+.btn__full a{
+    color: var(--white-2);
+}
+
+.about-me__description-btn {
+    margin-top: 19px;
+    border: 1px solid var(--white-2);
+}
+
+
+
+
+/*---------------------------------------*/
+/* HEADER */
+/*---------------------------------------*/
+header {
+    background-color: #fff;
+}
+
+.hero-box {
+    display: flex;  
+    flex-direction: row;
+}
+
+.text-box {
+    background-color: var(--white-1);
+    width: 51rem;
+    height: 29.7rem;
+    padding: 18.2rem 3.2rem 18.2rem 9.7rem;    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.text-box__main,
+.text-box__profession {
+    color: var(--primary-dark);
+}
+
+.hero-image {
+    width: 64rem;
+    height: 66.1rem;
+}
+
+.hero-image img {
+    height: 100%;
+    width: auto;
+}
+
+.about-me {
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me__heading {
+    padding: 6.4rem 4.5rem 10.2rem 9.7rem;
+}
+
+.about-me__description {
+    font-size: var(--font-very-small);
+    padding: 6.4rem 9.7rem 12.6rem 4.5rem;
+    line-height: 1.5;
+}
+
+
+/*---------------------------------------*/
+/* WORK EXPERIENCE */
+/*---------------------------------------*/
+
+.work-experience {
+    height: 53.8rem;
+}
+
+.work-experience-box {
+    background-color: var(--primary-light);
+    padding: 6.4rem 9.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.work-experience__heading-main {
+    width: 25.9rem;
+    height: 11.2rem;
+}
+
+.work-experience__content {
+    width: 47.5rem;   
+    position: relative;
+}
+
+.work-experience__content:not(:last-child) {
+    margin-bottom: 7.3rem;
+}
+
+.work-experience__content span {
+    font-weight: 400;
+}
+
+.work-experience__content p {
+    width: 43.2rem;
+    font-size: var(--font-very-small);
+    line-height: 1.5;
+    margin-top: 1.2rem;
+    padding-right: 43.2rem;
+}
+
+.work-experience__content:not(:last-child)::after {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    width: 47.5rem;
+    content: "";
+    border: 1px solid var(--grey-1);
+}
+
+
+/*---------------------------------------*/
+/* SKILLS */
+/*---------------------------------------*/
+
+.skills-box {
+    height: 52rem;
+    background: var(--primary-dark);
+    padding: 6.4rem 24.9rem 7rem 24.9rem;
+}
+
+.skills__heading{
+    display: flex;
+    justify-content: center;
+}
+
+.skills__content-box {
+    margin-top: 5.4rem;
+}
+
+.skills__content-box li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skills__content-box li:not(:last-child) {
+    margin-bottom: 3.6rem;
+}
+
+.skills__content-box p {
+    font-size: var(--font-small);
+    width: 22.2rem;
+    height: 2.8rem;
+    margin-right: 1.4rem;
+}
+
+.skills__bar-box {
+    width: 48.4rem;
+    height: 1.6rem;
+    margin-right: 1.4rem;
+}
+
+.skills__bar-box .bar {
+    width: 100%;
+    background: var(--white-2);
+    font-size: 1.4rem;
+}
+.skills__content-box .html {
+    background: var(--primary-light);
+    width: 90%;
+}
+
+.skills__content-box .bar .css {
+    background: var(--primary-light);
+    width: 70%;   
+}
+
+.skills__content-box .bar .javascript {
+    background: var(--primary-light);
+    width: 70%;
+}
+
+.skills__content-box .bar .jquery {
+    background: var(--primary-light);
+    width: 65%;
+}
+
+.skills__content-box .bar .typography {
+    background: var(--primary-light);
+    width: 80%;
+}
+
+.skills__content-box .bar .react {
+    background: var(--primary-light);
+    width: 5%;
+}
+
+.skills__content-box small {
+    font-size: var(--font-very-small);
+}
+
+
+/*---------------------------------------*/
+/* PREVIOUS PROJECTS */
+/*---------------------------------------*/
+
+.projects {
+    background-color: var(--white-2);
+    height: 128.5rem;
+    padding-top: 6.4rem;
+}
+
+.projects__heading-main {
+    color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+}
+
+.grid-1__row-1 {
+    margin: 5.5rem 9.7rem 6.4rem 9.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-1__row-2 {
+    margin: 6.4rem 9.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects__heading {
+    color: var(--primary-dark);
+    font-weight: 400;
+    margin-top: 2.4rem;
+}
+
+.projects__description {
+    margin-top: 1.2rem;
+}
+
+.projects__description p{
+    width: 51.1rem;
+    color: var(--grey-2);
+    font-size: var(--font-extra-small);
+}
+
+/*---------------------------------------*/
+/* INSTAGRAM */
+/*---------------------------------------*/
+
+.instagram {
+    height: 89.6rem;
+    background-color: var(--primary-light);
+}
+
+.instagram__content {
+    padding: 6.4rem 9.7rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.instagram__heading-main {
+    width: 25.9rem;
+    height: 11.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.instagram__images {
+    margin-left: 5.9rem;   
+}
+
+.insta:not(:last-child) {
+    margin-right: 2.1rem;
+}
+
+.grid-insta__row-2 {
+    margin: 2.4rem 0rem;
+}
+
+
+/*---------------------------------------*/
+/* FOOTER */
+/*---------------------------------------*/
+
+.footer {
+    height: 26.6rem;
+    background: var(--primary-dark);
+}
+
+.footer__container-box {
+    padding: 6.4rem 13.5rem 6.4rem 13.55rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__description {
+    width: 47.5rem;
+    height: 7.2rem;
+    margin-top: 2.4rem;
+}
+
+.footer__description p {
+    color: var(--white-2);
+    font-size: var(--font-very-small);
+}
+
+.footer__social-links ul li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__social-links ul li:not(:last-child) {
+    margin-bottom: 1.4rem;
+}
+
+.footer__social-links {
+    margin-left: 16.45rem;
+    
+}
+ion-icon {
+    font-size: 2.4rem;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.footer__social-links .url {
+    text-decoration: none;
+    color: #fff;
+    font-size: var(--font-small);
+    margin-left: 2.4rem;
+}
+
+
+
