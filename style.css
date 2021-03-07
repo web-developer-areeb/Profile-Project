@@ -65,6 +65,17 @@ html {
     margin-bottom: 2rem;
 }
 
+/*------------LINKS----------*/
+
+a {
+    text-decoration: none;
+}
+
+.projects__heading a:active,
+.projects__heading a:visited {
+    color: var(--primary-dark);
+}
+
 
 /*------------HEADINGS----------*/
 
