@@ -7,7 +7,7 @@
 
 html {
     color: #F8F8F8;
-    font-family:'Roboto',  sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 62.5%;
     text-rendering: optimizeLegibility;
@@ -17,18 +17,20 @@ html {
     scroll-behavior: smooth;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-.clearfix:after{
-    content:".";
-    display:block;
-    height:0;
-    clear:both;
-    visibility:hidden;
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 /*  VARIABLES   */
@@ -85,12 +87,14 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-extra-large);     /* font size 48px */
+    font-size: var(--font-extra-large);
+    /* font size 48px */
     font-weight: 400;
 }
 
 h3 {
-    font-size: var(--font-large);    /* font size 36px */
+    font-size: var(--font-large);
+    /* font size 36px */
     font-weight: 700;
 }
 
@@ -107,7 +111,7 @@ h5 {
 
 /*----------BUTTONS------------*/
 
-.btns {    
+.btns {
     width: 412px;
     display: flex;
     justify-content: left;
@@ -125,19 +129,19 @@ h5 {
     margin-right: 12px;
 }
 
-.btn a{
+.btn a {
     text-decoration: none;
     font-size: var(--font-very-small);
     color: var(--primary-light);
     font-weight: 700;
     margin: auto;
-}   
+}
 
 .btn__full {
     background: var(--primary-light);
 }
 
-.btn__full a{
+.btn__full a {
     color: var(--white-2);
 }
 
@@ -157,7 +161,7 @@ header {
 }
 
 .hero-box {
-    display: flex;  
+    display: flex;
     flex-direction: row;
 }
 
@@ -165,8 +169,8 @@ header {
     background-color: var(--white-1);
     width: 51rem;
     height: 29.7rem;
-    padding: 18.2rem 3.2rem 18.2rem 9.7rem;    
-    
+    padding: 18.2rem 3.2rem 18.2rem 9.7rem;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -228,7 +232,7 @@ header {
 }
 
 .work-experience__content {
-    width: 47.5rem;   
+    width: 47.5rem;
     position: relative;
 }
 
@@ -268,7 +272,7 @@ header {
     padding: 6.4rem 24.9rem 7rem 24.9rem;
 }
 
-.skills__heading{
+.skills__heading {
     display: flex;
     justify-content: center;
 }
@@ -306,6 +310,7 @@ header {
     background: var(--white-2);
     font-size: 1.4rem;
 }
+
 .skills__content-box .html {
     background: var(--primary-light);
     width: 90%;
@@ -313,12 +318,12 @@ header {
 
 .skills__content-box .bar .css {
     background: var(--primary-light);
-    width: 70%;   
+    width: 80%;
 }
 
 .skills__content-box .bar .javascript {
     background: var(--primary-light);
-    width: 70%;
+    width: 80%;
 }
 
 .skills__content-box .bar .jquery {
@@ -333,7 +338,7 @@ header {
 
 .skills__content-box .bar .react {
     background: var(--primary-light);
-    width: 5%;
+    width: 80%;
 }
 
 .skills__content-box small {
@@ -379,7 +384,7 @@ header {
     margin-top: 1.2rem;
 }
 
-.projects__description p{
+.projects__description p {
     width: 51.1rem;
     color: var(--grey-2);
     font-size: var(--font-extra-small);
@@ -407,7 +412,7 @@ header {
 }
 
 .instagram__images {
-    margin-left: 5.9rem;   
+    margin-left: 5.9rem;
 }
 
 .insta:not(:last-child) {
@@ -446,7 +451,7 @@ header {
     font-size: var(--font-very-small);
 }
 
-.footer__social-links ul li{
+.footer__social-links ul li {
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -459,8 +464,9 @@ header {
 
 .footer__social-links {
     margin-left: 16.45rem;
-    
+
 }
+
 ion-icon {
     font-size: 2.4rem;
     color: #fff;
@@ -473,6 +479,3 @@ ion-icon {
     font-size: var(--font-small);
     margin-left: 2.4rem;
 }
-
-
-
